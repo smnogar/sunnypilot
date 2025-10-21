@@ -72,6 +72,12 @@ def flash_panda(panda_serial: str) -> Panda:
 
   return panda
 
+def check_panda_support(panda) -> bool:
+  hw_type = panda.get_type()
+  if hw_type in Panda.SUPPORTED_DEVICES:
+    return True
+
+  return False
 
 def main() -> None:
   # signal pandad to close the relay and exit
