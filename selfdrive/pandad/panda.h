@@ -103,7 +103,7 @@ public:
 
 protected:
   // for unit tests
-  uint8_t receive_buffer[RECV_SIZE + sizeof(can_header) + 64];
+  uint8_t receive_buffer[RECV_SIZE + sizeof(can_header) + MAX_FRAME_PAYLOAD_BYTES];
   uint32_t receive_buffer_size = 0;
 
   Panda(uint32_t bus_offset) : bus_offset(bus_offset) {}
