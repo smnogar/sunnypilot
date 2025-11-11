@@ -20,3 +20,6 @@
 [submodule "sunnypilot/neural_network_data"]
   path = sunnypilot/neural_network_data
   url = https://github.com/sunnypilot/neural-network-data.git
+[submodule "pico-flexray"]
+	path = pico-flexray
+	url = https://github.com/smnogar/pico-flexray.git
